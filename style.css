@@ -1,0 +1,448 @@
+/* Reset margens e paddings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll suave ao navegar por âncoras */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  background-color: #07111f; 
+  color: #f5f7fa; 
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+/* Estilo para títulos */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Major Mono Display", monospace; 
+  letter-spacing: 0.08rem;
+}
+
+/* Remove sublinhado dos links */
+a {
+  text-decoration: none;
+}
+
+/* Imagens responsivas */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Container centralizado com largura máxima */
+.container {
+  width: 88%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Cabeçalho fixo no topo */
+.header {
+  background-color: rgba(8, 20, 37, 0.92);
+  border-bottom: 0.08rem solid #17345c;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(0.3rem);
+}
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Logo do site */
+.logo {
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 0.12rem;
+}
+
+/* Menu de navegação */
+.nav {
+  display: flex;
+  gap: 1.6rem;
+}
+
+/* Links do menu */
+.nav a {
+  color: #dbe8ff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover nos links */
+.nav a:hover {
+  color: #59d8ff;
+}
+
+/* Botão de navegação */
+.btn-nav {
+  background-color: #ff3b5f;
+  color: #ffffff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+/* Seção principal (hero/banner) */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(3, 10, 24, 0.75), rgba(3, 10, 24, 0.85)), url("img/ghostwire-banner.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Conteúdo dentro do hero */
+.hero-content {
+  max-width: 42rem;
+  padding: 5rem 0;
+}
+
+/* Texto pequeno do topo */
+.hero-tag {
+  color: #59d8ff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+  margin-bottom: 1rem;
+}
+
+/* Logo do hero */
+.hero-logo {
+  width: 40rem;
+  margin-bottom: 1.4rem;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 0.8rem rgba(89, 216, 255, 0.25));
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no logo */
+.hero-logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 1.2rem rgba(89, 216, 255, 0.45));
+}
+
+/* Texto principal */
+.hero-text {
+  font-size: 1.2rem;
+  max-width: 38rem;
+  color: #d9e4f5;
+  margin-bottom: 1.3rem;
+}
+
+/* Aviso em destaque */
+.hero-warning {
+  color: #ff5f7b;
+  font-style: italic;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Botão principal */
+.btn-main {
+  display: inline-block;
+  background-color: #00c2ff;
+  color: #07111f;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.6rem;
+  transition: 0.3s;
+  margin: 0.4rem;
+}
+
+/* Espaçamento padrão de seções */
+.section {
+  padding: 5rem 0;
+}
+
+/* Layout em duas colunas */
+.two-columns {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Estilo base de cartões */
+.card,
+.feature-card,
+.cta-box {
+  background: #0b1b30;
+  border: 0.08rem solid #17345c;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+/* Cartões comuns */
+.card {
+  width: 50%;
+  padding: 2rem;
+  transition: 0.3s;
+}
+
+/* Título dos cards */
+.card h3 {
+  color: #59d8ff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Texto dos cards */
+.card p {
+  color: #d4e0f0;
+  margin-bottom: 1rem;
+}
+
+/* Texto especial (lore) */
+.lore-text {
+  margin-top: 1rem;
+  color: #59d8ff;
+  font-style: italic;
+}
+
+/* Lista sem marcador */
+.info-list {
+  list-style: none;
+}
+
+/* Itens da lista */
+.info-list li {
+  color: #d4e0f0;
+  margin-bottom: 0.9rem;
+}
+
+/* Título de seção */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Subtexto da seção */
+.section-subtext {
+  text-align: center;
+  color: #ff5f7b;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* Container de features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Cartões de features */
+.feature-card {
+  width: calc(50% - 0.75rem);
+  padding: 2rem;
+  transition: 0.3s;
+}
+
+/* Título das features */
+.feature-card h4 {
+  color: #59d8ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Texto das features */
+.feature-card p {
+  color: #d4e0f0;
+}
+
+/* Container responsivo de vídeo */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 0.08rem solid #17345c;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+}
+
+/* Iframe do vídeo */
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Área visível do carrossel */
+.carousel-track-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 0.08rem solid #17345c;
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.35);
+}
+
+/* Trilho do carrossel */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Imagens do carrossel */
+.carousel-image {
+  min-width: 100%;
+  height: 34rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botões do carrossel */
+.carousel-btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 194, 255, 0.95);
+  color: #07111f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+  box-shadow: 0 0 1rem rgba(0, 194, 255, 0.3);
+}
+
+/* Hover botão carrossel */
+.carousel-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 1.4rem rgba(0, 194, 255, 0.6);
+}
+
+/* Caixa de chamada para ação */
+.cta-box {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+/* Título CTA */
+.cta-box h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Texto CTA */
+.cta-box p {
+  color: #d4e0f0;
+  max-width: 42rem;
+  margin: 0 auto 1.8rem;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #050c17;
+  border-top: 0.08rem solid #17345c;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Texto rodapé */
+.footer p {
+  color: #b5c7dd;
+  margin-bottom: 0.5rem;
+}
+
+/* Botão voltar ao topo */
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #00c2ff;
+  color: #07111f;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  box-shadow: 0 0 1rem rgba(0, 194, 255, 0.35);
+  z-index: 1000;
+}
+
+/* Estado visível do botão */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover botão topo */
+.back-to-top:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 1.5rem rgba(0, 194, 255, 0.6);
+}
+
+/* Hover botões principais */
+.btn-main:hover,
+.btn-nav:hover {
+  box-shadow: 0 0 1.5rem #00c2ff, 0 0 2rem rgba(0, 194, 255, 0.3);
+  transform: translateY(-0.2rem);
+}
+
+/* Hover cards */
+.feature-card:hover,
+.card:hover {
+  transform: translateY(-0.3rem);
+  border-color: #59d8ff;
+  box-shadow: 0 0 1rem rgba(89, 216, 255, 0.2);
+}
+
+/* Fundo da seção info */
+#info {
+  background: linear-gradient(rgba(3, 10, 24, 0.75), rgba(3, 10, 24, 0.85)), url("img/ghostwire-banner.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Fundo da galeria */
+#galeria {
+  background: linear-gradient(rgba(3, 10, 24, 0.75), rgba(3, 10, 24, 0.85)), url("img/ghostwire4.webp");
+  background-size: cover;
+  background-position: center;
+}
